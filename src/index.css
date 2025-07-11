@@ -1,0 +1,57 @@
+@import 'tailwindcss';
+
+:root {
+    background-color: #010318;
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+}
+
+@theme {
+    --animate-spotlight: spotlight 2s ease 0.75s 1 forwards;
+    --color-primary: #0d1117;
+    --color-border: #30363d;
+    --color-text-primary: #9ba6b1;
+    --color-text-secondary: #ebf5ff;
+    --color-text-tertiary: #BFDBFE;
+    --color-input: #c9d1d9;
+    --color-secondary: #6e40c9;
+    --color-button-hover: #0076ffe6;
+    --color-line-node: #1F2134;
+    --color-line-decoration: #FFFFFF4D;
+    --color-epic: #312F58;
+    --color-story:#0B361E;
+    --color-task:#C293FF66;
+    --color-sprint:#FFFFFF0A;
+    --color-size-xs:#5BC0DE66;
+    --color-issue-green:#0E8A1666;
+    --color-issue-yellow:#FBCA0466;
+    --color-size-l:#E67E2266;
+    --color-issue-red:#E74C3C66;
+    --color-upload-box:#090830FF;
+    --color-upload-file: #010318FF;
+    --color-uploadinfo-display: #0b0d21FF;
+    --color-sub-text: #BFDBFEFF;
+    --color-default: #CCCCCC66;
+    --color-border-line: rgba(255, 255, 255, 0.3);
+    --color-primary-border: #C4D9FC;
+    --color-secondary-border: #142C57;
+    --color-secondary-bg: #01031866;
+    --color-tertiary: #0b0d21;
+    --color-focus: #1c1e33;
+    --color-danger-border: #781C1C;
+    --color-danger-bg: #450A0A;
+    --color-gradient-start: #2D8CFF;
+    --color-gradient-end: #1B5499;
+    --color-gradient: #00021199;
+    --color-user:#0E1023;
+    --color-nav-text:#2D8CFF;
+    --color-nav-background: #090830;
+    --color-sub-text:#BFDBFE;
+    --color-searchbar-border:#202234;
+    --color-roadmap-card:#0B0D21;
+    --color-roadmap-border:#676874;
+    --color-button-primary:#2D8CFF;
+
+}
+
+
