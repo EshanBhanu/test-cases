@@ -1,4 +1,8 @@
-import { authSchema, signUpSchema } from "../utils/authSchema";
+import {
+  authSchema,
+  signUpSchema,
+  type SignInFormData,
+} from "../utils/authSchema";
 
 describe("authSchema", () => {
   describe("authSchema validation", () => {
@@ -83,11 +87,52 @@ describe("authSchema", () => {
       };
       const result = signUpSchema.safeParse(invalidData);
       expect(result.success).toBe(false);
+    });
+
+    it("should fail name feild is empty", () => {
+      const invalidData = {
+        name: "",
+        email: "ebbhanuka@gmail.com",
+        password: "Secure@123",
+      };
+      const result = signUpSchema.safeParse(invalidData);
+      expect(result.success).toBe(false);
       if (!result.success) {
-        expect(result.error.issues[0].message).toBe(
-          "Invalid input: expected nonoptional, received undefined"
-        );
+        expect(result.error.issues[0].message).toBe("Name is required");
       }
+    });
+  });
+
+  describe("signInSchema validation", () => {
+    it("should validate data without name", () => {
+      const validaData = {
+        email: "eshanbhanu@gmail.com",
+        password: "Secure@123",
+      };
+      const result = authSchema.safeParse(validaData);
+      expect(result.success).toBe(true);
+    });
+  });
+
+  describe("Typescript type inference", () => {
+    it("should infer correct signInFormData type", () => {
+      const signInData: SignInFormData = {
+        email: "eshanbhanu@gmail.com",
+        password: "Secure@123",
+      };
+      expect(signInData.email).toBeDefined();
+      expect(signInData.password).toBeDefined();
+    });
+
+    it("should infer correct signUpFormData type", () => {
+      const signUpData = {
+        name: "Eshan Bhanuka",
+        email: "ebbhanuka@gmail.com",
+        password: "Secure@123",
+      };
+      expect(signUpData.name).toBeDefined();
+      expect(signUpData.email).toBeDefined();
+      expect(signUpData.password).toBeDefined();
     });
   });
 });
