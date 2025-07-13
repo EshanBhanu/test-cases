@@ -198,26 +198,7 @@ jest.mock("react", () => ({
 
 Run `npm run test:coverage` to generate a detailed coverage report. The project aims for:
 
-- **Statements**: >90%
-- **Branches**: >85%
-- **Functions**: >90%
-- **Lines**: >90%
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch: `git checkout -b feature/your-feature-name`
-3. Write tests for your changes
-4. Ensure all tests pass: `npm test`
-5. Commit your changes: `git commit -m 'Add some feature'`
-6. Push to the branch: `git push origin feature/your-feature-name`
-7. Submit a pull request
-
-## 📝 Testing Best Practices
-
-1. **Test Behavior, Not Implementation**: Focus on what the component does, not how it does it
-2. **Use Descriptive Test Names**: Test names should clearly describe the expected behavior
-3. **Arrange-Act-Assert**: Structure tests with clear setup, execution, and verification phases
-4. **Mock External Dependencies**: Keep tests isolated and predictable
-5. **Test Edge Cases**: Include error scenarios and boundary conditions
-6. **Maintain Test Coverage**: Aim for high coverage while focusing on meaningful tests
+- **Statements**: 86.79%
+- **Branches**: 33.33%
+- **Functions**: 70%
+- **Lines**: 85.1%
