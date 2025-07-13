@@ -29,8 +29,8 @@ npm install
 
 ```bash
 npm test
-npm run test:watch``` <-recommended!
-
+npm run test:watch <-recommended!
+```
 
 
 ## 🏗️ Project Structure
